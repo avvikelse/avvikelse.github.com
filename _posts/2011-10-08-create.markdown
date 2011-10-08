@@ -14,7 +14,7 @@ curl -X POST http://api.av.vikel.se/v1/deviations/ \
      -d "comment=Stopp vid Hornstull" \
      -d "scope=4" \
      -d "latitude=59.316331" \
-     -d "latitude=18.034143" \
+     -d "longitude=18.034143" \
      -d "route_type=BUS" \
      -d "source=crowd"
 {% endhighlight %}
