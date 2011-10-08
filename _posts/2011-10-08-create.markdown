@@ -10,9 +10,8 @@ Creates a new deviation.
 #### Request
 
 {% highlight bash %}
-curl -X POST http://localhost:8888/v1/deviation/ \
-     -d "title=Stopp vid Hornstull" \
-     -d "details=Bussen kommer inte." \
+curl -X POST http://localhost:8888/v1/deviations/ \
+     -d "comment=Stopp vid Hornstull" \
      -d "scope=4" \
      -d "latitude=59.316331" \
      -d "latitude=18.034143" \
