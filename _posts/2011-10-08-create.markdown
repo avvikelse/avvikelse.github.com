@@ -9,7 +9,7 @@ Creates a new deviation.
 
 #### Request
 
-{%
+{% highlight bash %}
 curl -X POST http://localhost:8888/v1/deviation/ \
      -d "title=Stopp vid Hornstull" \
      -d "details=Bussen kommer inte." \
@@ -18,7 +18,7 @@ curl -X POST http://localhost:8888/v1/deviation/ \
      -d "latitude=18.034143" \
      -d "route_type=BUS" \
      -d "source=crowd"
-%}
+{% endhighlight %}
 
 #### Response
 
