@@ -1,0 +1,8 @@
+---
+layout: post
+title: Create 
+---
+
+{% highlight javascript %}
+{"deviation": {"line_number": "4", "description": null, "title": "Stopp vid TCE", "created_at": "2011-10-08 15:14:09.815581", "longitude": "58.000", "latitude": "18.000", "id": "12345"}}
+{% endhighlight %}
