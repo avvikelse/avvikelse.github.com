@@ -10,7 +10,7 @@ Creates a new deviation.
 #### Request
 
 {% highlight bash %}
-curl -X POST http://localhost:8888/v1/deviations/ \
+curl -X POST http://api.av.vikel.se/v1/deviations/ \
      -d "comment=Stopp vid Hornstull" \
      -d "scope=4" \
      -d "latitude=59.316331" \
