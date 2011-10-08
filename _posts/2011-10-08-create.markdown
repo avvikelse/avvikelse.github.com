@@ -9,8 +9,8 @@ Creates a new deviation.
 
 #### Request
 
-{% highlight bash %}
-curl -X POST http://api.av.vikel.se/v1/deviations/ \
+{% highlight bash prettyprint %}
+curl -X POST http://localhost:8888/v1/deviations/ \
      -d "comment=Stopp vid Hornstull" \
      -d "line=4" \
      -d "vehicle=12345" \
