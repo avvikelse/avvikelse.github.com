@@ -1,21 +1,19 @@
 ---
 layout: post
-title: POST /v1/deviations/ 
+title: GET /v1/deviations/status/
 ---
 
-Creates a new deviation.
+Deviation status report for the user query.
 
 ### Endpoint
 
-`http://localhost:8888/v1/deviations/`
+`http://localhost:8888/v1/deviations/status/`
 
 ### Method
 
-`POST`
+`GET`
 
 ### Parameters
-
-All parameters is optional, but at least one must be provided.
 
 <table>
     <thead>
@@ -52,9 +50,9 @@ All parameters is optional, but at least one must be provided.
             <td>WSG84 example <code>18.034143</code></td>
         </tr>
         <tr>
-            <td><code>comment</code></td>
-            <td>A comment</td>
-            <td>An optional comment</td>
+            <td><code>distance</code></td>
+            <td>The distance to use in combination with <code>latitude</code> and <code>longitude</code></td>
+            <td><code>0.5</code></td>
         </tr>
     </tbody>
 </table>
@@ -64,19 +62,14 @@ All parameters is optional, but at least one must be provided.
 #### Request
 
 {% highlight bash prettyprint %}
-curl -X POST http://localhost:8888/v1/deviations/ \
-     -d "comment=Stopp vid Hornstull" \
-     -d "line=4" \
-     -d "vehicle=12345" \
-     -d "latitude=59.316331" \
-     -d "longitude=18.034143" \
-     -d "transport=BUS"
+curl -X GET "http://localhost:8888/v1/deviations/status/?line=4"
 {% endhighlight %}
 
 #### Response
 
 {% highlight javascript %}
 {
-    "id": "4e908ebd0f759d3c6e000000"
+    "affects": 0,
+    "comments": []
 }
 {% endhighlight %}
