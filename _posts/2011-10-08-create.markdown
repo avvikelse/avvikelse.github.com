@@ -3,6 +3,27 @@ layout: post
 title: Create 
 ---
 
+Creates a new deviation.
+
+### Example
+
+#### Request
+
+{%
+curl -X POST http://localhost:8888/v1/deviation/ \
+     -d "title=Stopp vid Hornstull" \
+     -d "details=Bussen kommer inte." \
+     -d "scope=4" \
+     -d "latitude=59.316331" \
+     -d "latitude=18.034143" \
+     -d "route_type=BUS" \
+     -d "source=crowd"
+%}
+
+#### Response
+
 {% highlight javascript %}
-{"deviation": {"line_number": "4", "description": null, "title": "Stopp vid TCE", "created_at": "2011-10-08 15:14:09.815581", "longitude": "58.000", "latitude": "18.000", "id": "12345"}}
+{
+    "id": "4e908ebd0f759d3c6e000000"
+}
 {% endhighlight %}
