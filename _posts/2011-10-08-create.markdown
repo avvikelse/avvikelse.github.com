@@ -42,6 +42,11 @@ All parameters is optional, but at least one must be provided.
             <td>Must be one of <code>BUS</code>, <code>METRO</code>, <code>TRAIN</code></td>
         </tr>
         <tr>
+            <td><code>stop_point</code></td>
+            <td>Stop point</td>
+            <td></td>
+        </tr>
+        <tr>
             <td><code>latitude</code></td>
             <td>The latitude</td>
             <td>WSG84 example <code>59.316331</code></td>
@@ -70,7 +75,8 @@ curl -X POST http://localhost:8888/v1/deviations/ \
      -d "vehicle=12345" \
      -d "latitude=59.316331" \
      -d "longitude=18.034143" \
-     -d "transport=BUS"
+     -d "transport=BUS" \
+     -d "stop_point=Hornstull"
 {% endhighlight %}
 
 #### Response
