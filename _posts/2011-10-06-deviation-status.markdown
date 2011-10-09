@@ -7,7 +7,7 @@ Deviation status report for the user query.
 
 ### Endpoint
 
-`http://localhost:8888/v1/deviations/status/`
+`http://api.av.vikel.se/v1/deviations/status/`
 
 ### Method
 
@@ -62,7 +62,7 @@ Deviation status report for the user query.
 #### Request
 
 {% highlight bash prettyprint %}
-curl -X GET "http://localhost:8888/v1/deviations/status/?line=4"
+curl -X GET "http://api.av.vikel.se/v1/deviations/status/?line=4"
 {% endhighlight %}
 
 #### Response

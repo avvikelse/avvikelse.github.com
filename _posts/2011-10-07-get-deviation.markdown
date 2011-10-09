@@ -7,7 +7,7 @@ Creates a new deviation.
 
 ### Endpoint
 
-`http://localhost:8888/v1/deviations/:id/`
+`http://api.av.vikel.se/v1/deviations/:id/`
 
 ### Method
 
@@ -18,7 +18,7 @@ Creates a new deviation.
 #### Request
 
 {% highlight bash prettyprint %}
-curl -X GET http://localhost:8888/v1/deviations/:id/
+curl -X GET http://api.av.vikel.se/v1/deviations/:id/
 {% endhighlight %}
 
 #### Response

@@ -7,7 +7,7 @@ Creates a new deviation.
 
 ### Endpoint
 
-`http://localhost:8888/v1/deviations/`
+`http://api.av.vikel.se/v1/deviations/`
 
 ### Method
 
@@ -69,7 +69,7 @@ All parameters is optional, but at least one must be provided.
 #### Request
 
 {% highlight bash prettyprint %}
-curl -X POST http://localhost:8888/v1/deviations/ \
+curl -X POST http://api.av.vikel.se/v1/deviations/ \
      -d "comment=Stopp vid Hornstull" \
      -d "line=4" \
      -d "vehicle=12345" \
