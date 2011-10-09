@@ -13,6 +13,26 @@ Creates a new deviation.
 
 `GET`
 
+### Parameters
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Note</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>callback</code></td>
+            <td>The JSONP method to wrap the response with.</td>
+            <td><code>callback=myAwesomeFunction</code></td>
+        </tr>
+    </tbody>
+</table>
+
 ### Example
 
 #### Request
