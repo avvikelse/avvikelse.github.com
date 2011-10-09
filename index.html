@@ -8,14 +8,20 @@ title: Avvikelse Documentation
     <p>Crowd sourced [micro] deviations.</p>
 
     <h3>Widget for your service</h3>
-    <div class="highlight"><pre><code class="html">&lt;span class=&quot;avvikelse-widget&quot;
-    data-lat=&quot;59.3299&quot;
-    data-lng=&quot;18.0564&quot;
-    data-source=&quot;crowd&quot;
-    data-transport=&quot;TRAIN&quot;
-    data-vehicle=&quot;431&quot;&gt;&lt;/span&gt;
 
-&lt;script src=&quot;http://dev.av.vikel.se/js/widget.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code></pre>
-    </div>
-</div>
+{% highlight html %}
+<span class="avvikelse-widget"
+    data-lat="59.3299"
+    data-lng="18.0564"
+    data-source="crowd"
+    data-transport="TRAIN"
+    data-vehicle="431">
+</span>
+{% endhighlight %}
+
+    <p>Place before <code>body</code> is closed.</p>
+
+{% highlight html %}
+<script src="http://dev.av.vikel.se/js/widget.js" type="text/javascript"></script>
+{% endhighlight %}
 

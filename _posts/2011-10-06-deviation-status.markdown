@@ -54,6 +54,11 @@ Deviation status report for the user query.
             <td>The distance to use in combination with <code>latitude</code> and <code>longitude</code></td>
             <td><code>0.5</code></td>
         </tr>
+        <tr>
+            <td><code>callback</code></td>
+            <td>The JSONP method to wrap the response with.</td>
+            <td><code>callback=myAwesomeFunction</code></td>
+        </tr>
     </tbody>
 </table>
 
