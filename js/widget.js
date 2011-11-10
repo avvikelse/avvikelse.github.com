@@ -141,10 +141,8 @@
                     'source': element.attr('data-source'),
                     'transport': element.attr('data-transport'),
                     'vehicle': element.attr('data-vehicle'),
-                    'comment': 'Fel i tidtabell.',
+                    'comment': element.attr('data-comment'),
                 };
-
-                console.log(data);
 
                 $.post(endpoint, data);
             }
